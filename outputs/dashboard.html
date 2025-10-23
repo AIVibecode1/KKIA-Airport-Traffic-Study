@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>King Khalid Airport Traffic Dashboard</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f5f7fa; color: #1f2a44; }
+    header { background-color: #0a3d62; color: #fff; padding: 24px; }
+    main { padding: 24px 40px; }
+    section { margin-bottom: 40px; background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 6px 15px rgba(10,61,98,0.08); }
+    h1, h2 { margin-top: 0; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .kpi { background: #e8f1fb; border-radius: 10px; padding: 16px; text-align: center; }
+    .kpi span { display: block; font-size: 32px; font-weight: 700; color: #0a3d62; }
+    img { max-width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(31,42,68,0.18); }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #dde3ec; }
+    th { background: #0a3d62; color: #fff; }
+    ul { margin: 0; padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>King Khalid International Airport Traffic Dashboard</h1>
+    <p>Unique flight movements derived from the March–October 2025 operations dataset.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Key Performance Highlights</h2>
+      <div class="kpi-grid">
+        <div class="kpi"><span>144,045</span>Total unique movements</div>
+        <div class="kpi"><span>72,140</span>Inbound movements</div>
+        <div class="kpi"><span>71,905</span>Outbound movements</div>
+        <div class="kpi"><span>75,690</span>Domestic legs</div>
+        <div class="kpi"><span>68,355</span>International legs</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Traffic Trends</h2>
+      <p>Daily volume trends highlight the weekly cadence of passenger demand, with summer peaks evident in July and August.</p>
+      <img src="figures\daily_movements.png" alt="Daily movement trend" />
+    </section>
+
+    <section>
+      <h2>Operational Rhythm</h2>
+      <p>Evening and late-night banks show strong inbound dominance, while outbound departures concentrate around morning and late afternoon waves.</p>
+      <img src="figures\hourly_profile.png" alt="Hourly profile" />
+    </section>
+
+    <section>
+      <h2>Airline Footprint</h2>
+      <p>Saudi carriers anchor the hub, but regional partners sustain significant network breadth.</p>
+      <img src="figures\airline_leaders.png" alt="Top airlines" />
+      <table>
+        <thead>
+          <tr><th>Airline</th><th>Unique movements</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Saudi Arabian</td><td>58,398</td></tr>
+          <tr><td>flynas</td><td>32,582</td></tr>
+          <tr><td>flyadeal</td><td>23,516</td></tr>
+          <tr><td>flydubai</td><td>2,025</td></tr>
+          <tr><td>Gulf Air</td><td>2,015</td></tr>
+          <tr><td>Qatar</td><td>1,783</td></tr>
+          <tr><td>EgyptAir</td><td>1,598</td></tr>
+          <tr><td>Etihad</td><td>1,513</td></tr>
+          <tr><td>Emirates</td><td>1,352</td></tr>
+          <tr><td>Oman Air</td><td>1,200</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Route Mix & Terminals</h2>
+      <div class="kpi-grid">
+
+        <div class="kpi"><span>37,971</span>Inbound domestic</div>
+        <div class="kpi"><span>37,719</span>Outbound domestic</div>
+        <div class="kpi"><span>34,169</span>Inbound international</div>
+        <div class="kpi"><span>34,186</span>Outbound international</div>
+      </div>
+      <p>Terminal 5 dominates both arrivals and departures, underscoring its role as the primary domestic concourse.</p>
+      <img src="figures\domestic_international_mix.png" alt="Domestic vs international" />
+      <img src="figures\terminal_usage.png" alt="Terminal usage" />
+    </section>
+
+    <section>
+      <h2>Data Notes</h2>
+      <ul>
+        <li>Movements are deduplicated on schedule, direction, terminal, and counterparty airport to correct for codeshare rows.</li>
+        <li>Arrival records describe the counterparty airport in the destination fields; we treat these as the origin airports for inbound flights.</li>
+        <li>Domestic classification relies on ICAO codes beginning with "OE" (Saudi Arabia).</li>
+        <li>Owner trick example: the 15 Mar 2025 01:00 UTC departure to Jeddah (Terminal 5) appears twice in the raw file (<code>SV 1015</code> and <code>F3 169</code>) because Saudi Arabian and flyadeal share the service; deduplication collapses them into one movement.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,3 @@
+flight_type,movements,codeshare_routes,cargo_routes,source_records,redundant_rows
+arrival,72140,24994,0,75056,2916
+departure,71905,21685,0,78252,6347

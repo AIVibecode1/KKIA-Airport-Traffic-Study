@@ -1,0 +1,283 @@
+{
+  "movement_counts": {
+    "arrival": 72140,
+    "departure": 71905
+  },
+  "scope_counts": {
+    "arrival": {
+      "Domestic": 37971,
+      "International": 34169
+    },
+    "departure": {
+      "Domestic": 37719,
+      "International": 34186
+    }
+  },
+  "top_airlines": {
+    "Saudi Arabian": 58398,
+    "flynas": 32582,
+    "flyadeal": 23516,
+    "flydubai": 2025,
+    "Gulf Air": 2015,
+    "Qatar": 1783,
+    "EgyptAir": 1598,
+    "Etihad": 1513,
+    "Emirates": 1352,
+    "Oman Air": 1200,
+    "Jazeera": 1059,
+    "Royal Jordanian": 1015,
+    "Turkish": 929,
+    "Middle East": 873,
+    "Air Arabia": 822
+  },
+  "top_airports": {
+    "arrival": [
+      {
+        "airport": "Jeddah",
+        "movements": 12792
+      },
+      {
+        "airport": "Dubai",
+        "movements": 5957
+      },
+      {
+        "airport": "Cairo",
+        "movements": 4494
+      },
+      {
+        "airport": "Abha",
+        "movements": 4228
+      },
+      {
+        "airport": "Ad Dammam",
+        "movements": 3460
+      },
+      {
+        "airport": "Medina",
+        "movements": 3135
+      },
+      {
+        "airport": "Jazan",
+        "movements": 2473
+      },
+      {
+        "airport": "Tabuk",
+        "movements": 2060
+      },
+      {
+        "airport": "Istanbul",
+        "movements": 1741
+      },
+      {
+        "airport": "Amman",
+        "movements": 1619
+      },
+      {
+        "airport": "Taif",
+        "movements": 1614
+      },
+      {
+        "airport": "Kuwait City",
+        "movements": 1480
+      },
+      {
+        "airport": "Doha",
+        "movements": 1438
+      },
+      {
+        "airport": "Manama",
+        "movements": 1435
+      },
+      {
+        "airport": "Neyran",
+        "movements": 1345
+      }
+    ],
+    "departure": [
+      {
+        "airport": "Jeddah",
+        "movements": 11781
+      },
+      {
+        "airport": "Dubai",
+        "movements": 5780
+      },
+      {
+        "airport": "Cairo",
+        "movements": 4566
+      },
+      {
+        "airport": "Abha",
+        "movements": 4250
+      },
+      {
+        "airport": "Ad Dammam",
+        "movements": 3719
+      },
+      {
+        "airport": "Medina",
+        "movements": 3320
+      },
+      {
+        "airport": "Jazan",
+        "movements": 2490
+      },
+      {
+        "airport": "Tabuk",
+        "movements": 2145
+      },
+      {
+        "airport": "Amman",
+        "movements": 1698
+      },
+      {
+        "airport": "Istanbul",
+        "movements": 1695
+      },
+      {
+        "airport": "Taif",
+        "movements": 1632
+      },
+      {
+        "airport": "Kuwait City",
+        "movements": 1493
+      },
+      {
+        "airport": "Doha",
+        "movements": 1480
+      },
+      {
+        "airport": "Manama",
+        "movements": 1417
+      },
+      {
+        "airport": "Neyran",
+        "movements": 1392
+      }
+    ]
+  },
+  "hourly_profile": {
+    "0": {
+      "arrival": 3357,
+      "departure": 2116
+    },
+    "1": {
+      "arrival": 2750,
+      "departure": 1678
+    },
+    "2": {
+      "arrival": 2282,
+      "departure": 2573
+    },
+    "3": {
+      "arrival": 2435,
+      "departure": 1217
+    },
+    "4": {
+      "arrival": 1656,
+      "departure": 2098
+    },
+    "5": {
+      "arrival": 1792,
+      "departure": 2465
+    },
+    "6": {
+      "arrival": 2591,
+      "departure": 3168
+    },
+    "7": {
+      "arrival": 1907,
+      "departure": 3764
+    },
+    "8": {
+      "arrival": 2200,
+      "departure": 3300
+    },
+    "9": {
+      "arrival": 2753,
+      "departure": 3951
+    },
+    "10": {
+      "arrival": 3060,
+      "departure": 2934
+    },
+    "11": {
+      "arrival": 2286,
+      "departure": 3794
+    },
+    "12": {
+      "arrival": 2666,
+      "departure": 2829
+    },
+    "13": {
+      "arrival": 2681,
+      "departure": 3052
+    },
+    "14": {
+      "arrival": 3943,
+      "departure": 2470
+    },
+    "15": {
+      "arrival": 3506,
+      "departure": 3593
+    },
+    "16": {
+      "arrival": 2677,
+      "departure": 4213
+    },
+    "17": {
+      "arrival": 4013,
+      "departure": 3084
+    },
+    "18": {
+      "arrival": 3730,
+      "departure": 4141
+    },
+    "19": {
+      "arrival": 3993,
+      "departure": 3044
+    },
+    "20": {
+      "arrival": 3980,
+      "departure": 3627
+    },
+    "21": {
+      "arrival": 3637,
+      "departure": 3591
+    },
+    "22": {
+      "arrival": 4196,
+      "departure": 2654
+    },
+    "23": {
+      "arrival": 4049,
+      "departure": 2549
+    }
+  },
+  "terminal_usage": {
+    "5": {
+      "arrival": 37787,
+      "departure": 37402
+    },
+    "1": {
+      "arrival": 10980,
+      "departure": 11071
+    },
+    "3": {
+      "arrival": 10564,
+      "departure": 10679
+    },
+    "4": {
+      "arrival": 10501,
+      "departure": 10581
+    },
+    "2": {
+      "arrival": 1887,
+      "departure": 1771
+    },
+    "Unknown": {
+      "arrival": 421,
+      "departure": 401
+    }
+  }
+}
